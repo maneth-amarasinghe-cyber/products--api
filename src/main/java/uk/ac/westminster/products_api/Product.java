@@ -14,6 +14,7 @@ public class Product {
     }
 
     public Long getId() { return id; }
+    // Without a public getter, Jackson skips the field and it disappears from the JSON
     public String getName() { return name; }
     public double getPrice() { return price; }
 }
